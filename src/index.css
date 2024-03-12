@@ -3,6 +3,17 @@
 @tailwind utilities;
 
 
-body{
-    background-color: rgb(243 244 246)
-}
+
+
+@keyframes scrollBanner {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .banner {
+    animation: scrollBanner 10s linear infinite;
+  }

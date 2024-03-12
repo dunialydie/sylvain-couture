@@ -8,10 +8,10 @@ export default function Started(props){
                 <FontAwesomeIcon icon={props.icon} className="rounded-full p-2"/>
             </div>
             <div className='flex flex-col gap-3'>
-                <div className='font-bold text-[16px]'>
+                <div className='font-bold text-[18px]'>
                     {props.title}
                 </div>
-                <p className='text-[14px] text-slate-500'>
+                <p className='text-[16px] text-slate-500'>
                     {props.paragraphe}
                 </p>
             </div>
