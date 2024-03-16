@@ -13,6 +13,9 @@
       transform: translateX(-100%);
     }
   }
+  body{
+    background-color: #eeeff1;
+  }
   
   .banner {
     animation: scrollBanner 10s linear infinite;

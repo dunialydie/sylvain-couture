@@ -24,13 +24,14 @@ function CarouselComponent() {
       const text= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
   return (
-    <div className='p-5 '>
-    <Carousel responsive={responsive} className='w-auto' autoPlay={true} autoPlaySpeed={3000} infinite={true}>
-        <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
-        <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
-        <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
-        <Clients title="By our clients" parag={text} auteur="lydie" poste="DG" src={client} />
-    </Carousel>
+    <div className='flex flex-col p-5 md:flex  gap-3 md:px-12 '>
+      <div className='text-2xl font-bold text-center'>By our clients</div>
+      <Carousel responsive={responsive} className='w-auto rounded-lg bg-slate-200 gap-6' autoPlay={true} autoPlaySpeed={3000} infinite={true}>
+          <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
+          <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
+          <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
+          <Clients title="By our clients" parag={text} auteur="lydie" poste="DG" src={client} />
+      </Carousel>
     </div>
   );
 }
@@ -39,17 +40,39 @@ export default CarouselComponent;
 
  function Clients(props){
     return(
-        <div className='bg-slate-200 relative flex flex-col gap-4 p-4'>
-            <div className='text-2xl font-bold text-center'>{props.title}</div>
+        <div className='relative  gap-4 p-4  '>
+            {/* <div className='text-2xl font-bold text-center'>{props.title}</div> */}
             <div className='flex flex-col gap-3'>
                 <img src={props.src} alt="client" className='object-cover h-full w-full'/>
-                    <div className='absolute top-44 left-16 text-white gap-3 flex flex-col text-xl'>
+                    <div className='absolute  top-36 md:top-44 left-16 text-white gap-3 flex flex-col text-xl'>
                         <span>{props.auteur}</span>
                         <span className='underline font-bold'>{props.poste}</span>
                     </div>
-                <div className='px-5 text-center'>{props.parag}</div>
+                <div className='px-5 text-center md:text-start'>{props.parag}</div>
 
             </div>
         </div>
     )
 }
+
+
+//  function Client(props){
+//     return(
+//         <div className='flex flex-col gap-4 p-4 bg-slate-200 w-full'>
+//             <div className='text-2xl font-bold text-center'>{props.title}</div>
+//             <div className='flex'>
+//               <div className='flex flex-col gap-3 w-full'>
+//                 <div className='px-5 md:h-11'>{props.parag}</div>
+//                 <div className=' text-white gap-3 flex flex-col text-xl'>
+//                   <span>{props.auteur}</span>
+//                   <span className='underline font-bold'>{props.poste}</span>
+//                 </div>
+//               </div>
+//               <img src={props.src} alt="client" className='md:h-44 '/>
+
+//             </div>
+            
+
+//         </div>
+//     )
+// }

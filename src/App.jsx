@@ -10,8 +10,7 @@ import Portfolio from './components/Portfolio'
 function App() {
 
   return (
-    <div className=' bg-gray-100'>
-      <div className='bg-white  m-4 2xl:m-28 md:m-12'>
+    <div className=' bg-white  m-4 2xl:m-28 md:m-12'>
         <Header/>
         <Body/>
         <MissionVision/>
@@ -19,7 +18,6 @@ function App() {
         <CarouselComponent/>
         <Banner/>
         <Footer/> 
-      </div>      
     </div>
   )
 }

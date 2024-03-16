@@ -17,10 +17,10 @@ export default function Footer(){
     setInputValue(''); 
   };
     return (
-        <div className="bg-lime-950 flex flex-col gap-3 p-8 ">
-            <div className="border-b border-gray-slate-600 flex flex-col gap-5 pb-5">
-                <div className="flex flex-col gap-5">
-                    <div className="flex flex-col text-white text-3xl">
+        <div className="bg-[#1a2700] flex flex-col gap-3 py-8 ">
+            <div className="border-b border-b-gray-600 px-8 py-2 flex flex-col gap-5 pb-5 md:flex-row md:justify-between md:px-12 md:pb-14">
+                <div className="flex flex-col gap-5 md:gap-8">
+                    <div className="flex flex-col text-white text-3xl font-bold gap-2">
                         <span>Have an Awesome</span>
                         <span>Project in Mind?</span>
                     </div>
@@ -31,17 +31,16 @@ export default function Footer(){
                                 value={inputValue}
                                 onChange={handleInputChange}
                                 placeholder="Enter your email"
-                                className="py-2 rounded-full focus:outline-none focus:border-0 "
+                                className="md:px-3 rounded-full focus:outline-none focus:border-0 placeholder:text-[14px]"
                             />
-                        
                         </form>
-                        <Buttons type="submit" style=" bg-lime-400 rounded-full ">
-                            <FontAwesomeIcon icon={faArrowRight} className="w-8 h-8 p-2"/>
+                        <Buttons type="submit" style=" bg-[#cafc01] rounded-full px-2">
+                            <FontAwesomeIcon icon={faArrowRight} className="w-8 p-2"/>
                         </Buttons>
                         
                     </div>
                 </div>
-                <div className="grid grid-col-3 gap-3  items-center justify-between">
+                <div className="grid grid-col-3 gap-3  items-center justify-between md:flex md:gap-6">
                     <div className="flex flex-col col-span-2">
                     <FooterQuestions title="What we do" assone="Home" asstwo="Work" assthree="Service" assfour="Contact us"/>
                     </div>
@@ -53,16 +52,16 @@ export default function Footer(){
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-3 justify-between text-white">
-                <p className=" flex gap-3">
-                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-6 h-6 "/>
-                    <span>2023 Nitro. All rights reserved.</span>
+            <div className="flex flex-col gap-3 px-8 justify-between text-white md:px-12 md:flex-row">
+                <p className=" flex gap-3 items-center">
+                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className=" w-4 h-4"/>
+                    <span className="text-[14px]">2023 Nitro. All rights reserved.</span>
                 </p>
-                <div className="flex justify-between">
-                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-6 h-6"/>
-                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-6 h-6 "/>
-                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-6 h-6 "/>
-                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-6 h-6 "/>
+                <div className="flex justify-between md:gap-8 ">
+                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-5 h-6"/>
+                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-5 h-6 "/>
+                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-5 h-6 "/>
+                    <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className="w-5 h-6 "/>
                 </div>
             </div>
 
