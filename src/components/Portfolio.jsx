@@ -5,7 +5,7 @@ import second from "/src/assets/pablo-arroyo-_SEbdtH4ZLM-unsplash.jpg";
 
 export default function Portfolio(){
     return(
-        <div className="p-5 border-2 border-orange-400">
+        <div className="p-5 ">
             <div className="text-[18px]">See Our Portfolio</div>
             <div className="flex flex-col gap-3">
                 <CategoriePortfolio num="01" title="UI/UX Design" paragraphe="Qint is a logistics compagny that was specialized in customized solutions for direct deliveries nationwide and worldwide." first={first} altone="first image" second={second} alttwo="second image" />

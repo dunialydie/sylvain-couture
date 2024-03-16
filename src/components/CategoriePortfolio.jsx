@@ -6,7 +6,7 @@ export default function CategoriePortfolio(props){
     const [blocOpen,setOpen]= useState(false)
     return (
         <div className="flex flex-col gap-4 items-center border-b-2" style={props.style}>
-            <div className='flex justify-between px-5 w-full border-2 border-yellow-500'>
+            <div className='flex justify-between px-5 w-full '>
                 <span className=' text-slate-500'>{props.num}</span>
                 { blocOpen ? (<FontAwesomeIcon icon={faAngleDown} className={`rounded-full p-2 border-2 ${blocOpen ? 'bg-black text-white' : 'border-black'} cursor-pointer`} onClick={()=> setOpen(!blocOpen)}/>) : (<FontAwesomeIcon icon={faAngleUp} className={`rounded-full p-2 border-2 ${blocOpen ? 'bg-black text-white' : 'border-black'} cursor-pointer`} onClick={()=> setOpen(!blocOpen)}/>)}
             </div>

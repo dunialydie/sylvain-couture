@@ -21,12 +21,12 @@ export default function MissionVision(){
                 </div>
             </div>
             
-            <div className="relative border-2 border-violet-700">
+            <div className="relative ">
                 <img src={bgckground} alt="" className="object-cover h-full w-full rounded-lg"/>
                 <p className="absolute top-32 text-white underline text-[12px] px-2">Our Goals</p>
                 <p className="absolute top-40 text-white font-bold text-[16px] px-2">To be the best leading agency in the industry.</p>
             </div>
-            <div className="flex flex-col gap-3 border-2 border-violet-700">
+            <div className="flex flex-col gap-3 ">
                 <Mission title="Our Mission" body="Customer Success" part="Is our Mission" footer= "Digital has been developing elite, award winning designs and digital products since 2008."/>
                 <Mission title="Our Vision" body="We are Working" part="on Future" footer= "Digital has been developing elite, award winning designs and digital products since 2008."/>
 

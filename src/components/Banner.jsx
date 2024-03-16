@@ -11,12 +11,12 @@ const repetition= (message, time)=>{
 
 export default function Banner(){
     const messages = ["Let's Talk Now"];
-    const config= repetition(messages,10)
+    const config= repetition(messages,5)
     return (
-    <div className="banner overflow-hidden h-20 bg-lime-400 flex items-center mt-6 border-2 border-black">
-      <div className="whitespace-nowrap px-4 py-2 animate-scrollBanner duration-[10s] ease-linear infinite">
+    <div className="overflow-hidden h-20 bg-lime-400 flex items-center mt-6 ">
+      <div className="banner whitespace-nowrap  py-2 animate-scrollBanner ease-linear infinite">
         {config.map((message, index) => (
-          <span key={index} className="text-black text-lg ">{message} - <FontAwesomeIcon icon={faFaceSmile} /> </span>
+          <span key={index} className="text-black text-lg duration-[40s]">{message} - <FontAwesomeIcon icon={faFaceSmile} /> </span>
         ))}
       </div>
     </div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight, faCopyright } from '@fortawesome/free-solid-svg-icons';
 import FooterQuestions from "./FooterQuestions";
+import Buttons from "./Buttons";
 
 
 export default function Footer(){
@@ -16,24 +17,28 @@ export default function Footer(){
     setInputValue(''); 
   };
     return (
-        <div className="bg-lime-950 flex flex-col gap-3 p-8 border-2 border-blue-500">
+        <div className="bg-lime-950 flex flex-col gap-3 p-8 ">
             <div className="border-b border-gray-slate-600 flex flex-col gap-5 pb-5">
                 <div className="flex flex-col gap-5">
                     <div className="flex flex-col text-white text-3xl">
                         <span>Have an Awesome</span>
                         <span>Project in Mind?</span>
                     </div>
-                    <div className="border-2 bg-white rounded-full ">
-                        <form onSubmit={handleSubmit} className=" rounded-full flex items-center justify-between px-3">
+                    <div className="border-2 bg-white rounded-full flex">
+                        <form onSubmit={handleSubmit} className=" rounded-full flex items-center justify-between w-full px-2">
                             <input
                                 type="text"
                                 value={inputValue}
                                 onChange={handleInputChange}
                                 placeholder="Enter your email"
-                                className="p-3 rounded-full focus:outline-none focus:border-0"
+                                className="py-2 rounded-full focus:outline-none focus:border-0 "
                             />
-                            <FontAwesomeIcon icon={faArrowRight} className="bg-lime-400 rounded-full p-3 w-8"/>
+                        
                         </form>
+                        <Buttons type="submit" style=" bg-lime-400 rounded-full ">
+                            <FontAwesomeIcon icon={faArrowRight} className="w-8 h-8 p-2"/>
+                        </Buttons>
+                        
                     </div>
                 </div>
                 <div className="grid grid-col-3 gap-3  items-center justify-between">

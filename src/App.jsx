@@ -10,8 +10,8 @@ import Portfolio from './components/Portfolio'
 function App() {
 
   return (
-    <div className='border-2 border-black bg-gray-100'>
-      <div className='bg-white border-2 border-red-600 m-4'>
+    <div className=' bg-gray-100'>
+      <div className='bg-white  m-4 2xl:m-28 md:m-12'>
         <Header/>
         <Body/>
         <MissionVision/>
@@ -26,6 +26,3 @@ function App() {
 
 export default App
 
-// body{
-//   background-color: rgb(243 244 246)
-// }

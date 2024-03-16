@@ -24,7 +24,7 @@ function CarouselComponent() {
       const text= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
   return (
-    <div className='p-5 border-2 border-fuchsia-400'>
+    <div className='p-5 '>
     <Carousel responsive={responsive} className='w-auto' autoPlay={true} autoPlaySpeed={3000} infinite={true}>
         <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
         <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
@@ -39,7 +39,7 @@ export default CarouselComponent;
 
  function Clients(props){
     return(
-        <div className='bg-slate-200 relative flex flex-col gap-4  p-4'>
+        <div className='bg-slate-200 relative flex flex-col gap-4 p-4'>
             <div className='text-2xl font-bold text-center'>{props.title}</div>
             <div className='flex flex-col gap-3'>
                 <img src={props.src} alt="client" className='object-cover h-full w-full'/>
