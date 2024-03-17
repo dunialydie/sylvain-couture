@@ -24,9 +24,9 @@ function CarouselComponent() {
       const text= "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
 
   return (
-    <div className='flex flex-col p-5 md:flex  gap-3 md:px-12 '>
-      <div className='text-2xl font-bold text-center'>By our clients</div>
-      <Carousel responsive={responsive} className='w-auto rounded-lg bg-slate-200 gap-6' autoPlay={true} autoPlaySpeed={3000} infinite={true}>
+    <div className='flex flex-col p-5 md:flex gap-3 md:px-12 2xl:px-28 2xl:gap-6'>
+      <div className='text-2xl font-bold text-center 2xl:text-4xl'>By our clients</div>
+      <Carousel responsive={responsive} className='w-auto rounded-lg bg-[#f5f5f4] gap-6' autoPlay={true} autoPlaySpeed={3000} infinite={true}>
           <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
           <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
           <Clients title="By our clients" parag={text} auteur="lydie" poste="DG"  src={client} />
@@ -44,11 +44,11 @@ export default CarouselComponent;
             {/* <div className='text-2xl font-bold text-center'>{props.title}</div> */}
             <div className='flex flex-col gap-3'>
                 <img src={props.src} alt="client" className='object-cover h-full w-full'/>
-                    <div className='absolute  top-36 md:top-44 left-16 text-white gap-3 flex flex-col text-xl'>
+                    <div className='absolute  top-36 md:top-44 left-16 text-white gap-3 flex flex-col text-xl 2xl:text-2xl'>
                         <span>{props.auteur}</span>
                         <span className='underline font-bold'>{props.poste}</span>
                     </div>
-                <div className='px-5 text-center md:text-start'>{props.parag}</div>
+                <div className='px-5 text-center md:text-start 2xl:text-center'>{props.parag}</div>
 
             </div>
         </div>

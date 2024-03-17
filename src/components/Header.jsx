@@ -18,7 +18,7 @@ export default function Header(){
                         <FontAwesomeIcon icon={faBars} style={{color: "#ffffffff",}} className="w-6 h-6"/>
                     </Buttons>
                 </div>
-                <nav className={`${!menuOpen ? 'flex' : 'hidden'} flex justify-between items-center  text-[14px] md:justify-between  md:w-full md:text-l 2xl:text-xl  `}>
+                <nav className={`${menuOpen ? 'flex' : 'hidden'} flex justify-between items-center  text-[14px] md:justify-between  md:w-full md:text-l 2xl:text-xl  `}>
                         <div className="flex md:gap-8 md:w-80 items-center gap-2  2xl:w-full 2xl:basis-3/4 2xl:gap-16">
                             <a  href="https://www.google.com" target="_blank" title="Cliquez pour visiter Google">Home</a>
                             <a  href="https://www.google.com" target="_blank" title="Cliquez pour visiter Google">Services</a>
