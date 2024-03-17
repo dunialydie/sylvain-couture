@@ -9,7 +9,7 @@ export default function CategoriePortfolio(props){
             <div className='flex justify-between px-5 w-full items-center 2xl:text-3xl'>
                 <span className=' text-slate-500'>{props.num}</span>
                 
-                { blocOpen ? (<FontAwesomeIcon icon={faAngleDown} className={`rounded-full p-2 border-2 2xl:w-14 2xl:h-14 ${blocOpen ? 'bg-black text-white' : 'border-black'} cursor-pointer`} onClick={()=> setOpen(!blocOpen)}/>) : (<FontAwesomeIcon icon={faAngleUp} className={`rounded-full p-2 border-2 2xl:h-14 2xl:w-14 ${blocOpen ? 'bg-black text-white' : 'border-black'} cursor-pointer`} onClick={()=> setOpen(!blocOpen)}/>)}
+                { blocOpen ? (<FontAwesomeIcon icon={faAngleDown} className={`rounded-full p-2 border-2 2xl:w-14 2xl:h-14 ${blocOpen ? 'bg-black text-white' : 'border-black'} cursor-pointer`} onClick={()=> setOpen(!blocOpen)}/>) : (<FontAwesomeIcon icon={faAngleUp} className={`rounded-full p-2 border-2 2xl:h-14 2xl:w-14 rotate-180${blocOpen ? 'bg-black text-white' : 'border-black'} cursor-pointer`} onClick={()=> setOpen(!blocOpen)}/>)}
             </div>
             <div className='flex flex-col gap-y-3 items-center md:px-8 md:flex-row 2xl:px-16'>
                 <div className='flex md:flex-col gap-3 md:basis-5/7 md:pb-5 2xl:basis-1/7 2xl:gap-8  2xl:px-10'>
