@@ -52,7 +52,7 @@ export default function Footer(){
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col gap-3  justify-between text-white  md:flex-row items-center">
+            <div className="flex flex-col gap-3  justify-between text-white  md:flex-row items-center 2xl:mt-5">
                 <p className=" flex gap-3 items-center">
                     <FontAwesomeIcon icon={faCopyright} style={{color: "#ffffffff",}} className=" w-4 h-4 "/>
                     <span className="text-[14px] md:text-xl">2023 Nitro. All rights reserved.</span>
