@@ -17,8 +17,8 @@ export default function CategoriePortfolio(props){
                     {blocOpen && <p className='text-[#919290] md:text-[12px] 2xl:text-2xl'>{props.paragraphe}</p>}
                 </div>
                 <div className='flex items-center md:px-8 md:items-start md:basis-2/7 2xl:basis-6/7 2xl:px-10 '>
-                    {blocOpen && <img src={props.first} alt={props.altone} className='w-44 h-48 md:w-40 md:h-20  shadow-lg 2xl:w-[55%] 2xl:h-40' />}
-                    {blocOpen && <img src={props.second} alt={props.alttwo} className='w-44 h-48 md:w-40 md:h-20 shadow-lg 2xl:w-[55%] 2xl:h-40' />}
+                    {blocOpen && <img src={props.first} alt={props.altone} className='w-44 h-48 md:w-40 md:h-20  shadow-lg 2xl:w-[75%] 2xl:h-40' />}
+                    {blocOpen && <img src={props.second} alt={props.alttwo} className='w-44 h-48 md:w-40 md:h-20 shadow-lg 2xl:w-[75%] 2xl:h-40' />}
                 </div>
             </div>
             

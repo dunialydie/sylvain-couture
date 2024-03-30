@@ -9,7 +9,7 @@ export default function Intro(props){
                 {props.title}
             </div>
             <div className="flex md:flex-row md:justify-between w-full md:content-end flex-col gap-4 items-center">
-                <div className="flex flex-col text-3xl col-span-1 items-center font-semibold md:text-4xl 2xl:text-6xl 2xl:font-medium 2xl:gap-5">
+                <div className="flex flex-col text-3xl col-span-1  font-semibold md:text-4xl 2xl:text-6xl 2xl:font-medium 2xl:gap-5">
                     <span>{props.titleOne}</span>
                     <span>{props.titleTwo}</span>
                 </div>
