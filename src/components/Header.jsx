@@ -3,6 +3,7 @@ import Buttons from "./Buttons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowLeft,faBars } from '@fortawesome/free-solid-svg-icons';
 import backGround from "/src/assets/alexander-andrews-jNKv4QohAk0-unsplash.jpg";
+import logo from '/src/assets/aaaaaaaaaaaaaa-removebg-preview.png'
 
 
 export default function Header(){
@@ -17,7 +18,7 @@ export default function Header(){
             <div className="absolute top-3 text-white w-full items-center px-4 md:flex md:justify-between justify-between md:w-full md:px-16 md:py-8 md:gap-8 2xl:px-28 2xl:gap-44 ">
                 <div className="flex justify-between items-center ">
                     <div className="font-bold text-xl md:text-4xl">
-                        <img src="src/assets/aaaaaaaaaaaaaa-removebg-preview.png" alt="logo" className="rounded-full 2xl:w-40 2xl:h-32 w-14  h-14" />
+                        <img src={logo} alt="logo" className="rounded-full 2xl:w-40 2xl:h-32 w-14  h-14" />
                     </div>
                     <Buttons style="md:hidden p-2 col-start-2" onClick={handleOpen}>
                         <FontAwesomeIcon icon={faBars} style={{color: "#fff",}} className="w-6 h-6"/>
