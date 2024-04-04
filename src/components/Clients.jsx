@@ -55,7 +55,7 @@ export default CarouselComponent;
                   <span className='text-white'>{props.auteur}</span>
                   <span className='underline font-bold text-[#cafc01]'>{props.poste}</span>
                 </div>
-                <div className='p-5 text-center md:text-start 2xl:text-center'>{props.parag}</div>
+                <div className='p-5 text-center  2xl:text-center'>{props.parag}</div>
 
             </div>
         </div>
