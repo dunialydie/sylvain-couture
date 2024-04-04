@@ -13,8 +13,6 @@ export default function Portfolio(){
                 <CategoriePortfolio num="01" title="Design et Création" paragraphe=" Ce service est au cœur de la maison de couture, où les idées prennent vie. Il comprend les designers, les illustrateurs de mode, et les stylistes qui travaillent sur les concepts, les croquis, et la sélection des tissus." first={first} altone="first image" second={second} alttwo="second image" />
                 <CategoriePortfolio num="02" title="Atelier de Couture" paragraphe="C'est l'unité où les pièces de mode sont concrètement réalisées. Elle regroupe les couturières, les brodeuses, les modélistes, et les techniciens de patronage qui travaillent sur la confection des vêtements selon les dessins du service de design." first={firstOne} altone="first image" second={secondOne} alttwo="second image" />
                 <CategoriePortfolio num="03" title="Contrôle Qualité" paragraphe=" Ce service s'assure que chaque pièce répond aux standards élevés de la maison en termes de finition et de qualité des matériaux."/>
-                <CategoriePortfolio num="04" title="Marketing et Communication " paragraphe="Responsable de promouvoir la marque et ses collections auprès du public et des acheteurs potentiels. Cela inclut la gestion des réseaux sociaux, les relations publiques, la publicité, et l'organisation d'événements comme les défilés de mode"/>
-                <CategoriePortfolio num="05" title="Ventes et Distribution" paragraphe=" Ce service gère les commandes, la vente en boutique ou en ligne, ainsi que la distribution des collections aux différents points de vente ou directement aux clients."/>
             </div>
 
         </div>

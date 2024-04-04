@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight, faCopyright } from '@fortawesome/free-solid-svg-icons';
 import FooterQuestions from "./FooterQuestions";
 import Buttons from "./Buttons";
+import Icons from "./footerIcon";
 
 
 export default function Footer(){
@@ -56,12 +57,13 @@ export default function Footer(){
                     <FontAwesomeIcon icon={faCopyright} style={{color: "#fff",}} className=" w-4 h-4 "/>
                     <span className="text-[14px] md:text-xl">2023 Sylvain. All rights reserved.</span>
                 </p>
-                <div className="flex justify-between md:gap-8 items-center">
+                {/* <div className="flex justify-between md:gap-8 items-center">
                     <FontAwesomeIcon icon={faCopyright} style={{color: "#fff",}} className="w-5 h-6 2xl:w-10 2xl:h-8"/>
                     <FontAwesomeIcon icon={faCopyright} style={{color: "#fff",}} className="w-5 h-6 2xl:w-10 2xl:h-8"/>
                     <FontAwesomeIcon icon={faCopyright} style={{color: "#fff",}} className="w-5 h-6 2xl:w-10 2xl:h-8"/>
                     <FontAwesomeIcon icon={faCopyright} style={{color: "#fff",}} className="w-5 h-6 2xl:w-10 2xl:h-8"/>
-                </div>
+                </div> */}
+                <Icons/>
             </div>
 
         </div>

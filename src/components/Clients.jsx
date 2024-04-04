@@ -25,10 +25,10 @@ function CarouselComponent() {
           items: 1
         }
       };
-      const text= "Lorsque j'ai fait appel à Sylvain Couture pour la création de ma robe de soirée, je ne m'attendais pas à être autant subjuguée. Non seulement la robe était absolument magnifique, mais le processus de création a été une expérience exceptionnelle. L'équipe a pris le temps d'écouter mes besoins et a su traduire ma vision en réalité avec une précision et une créativité hors pair. Sylvain Couture a vraiment dépassé toutes mes attentes !"
-      const text1= "Travailler avec Sylvain Couture sur plusieurs shootings photo a été un véritable plaisir. Leur capacité à fournir des pièces uniques et sur mesure qui correspondent parfaitement à l'ambiance de chaque projet est simplement remarquable. Leur attention aux détails et leur passion pour l'excellence se reflètent dans chaque création. Sylvain Couture est sans aucun doute une maison de couture de premier plan dans notre ville Lubumbashi."
-      const text2= "Recommander Sylvain Couture à mes clients pour leurs tenues de mariage est devenu une évidence. La qualité de leur travail, leur professionnalisme et leur capacité à matérialiser les rêves des futurs mariés en font un choix incontournable. Chaque couple que j'ai envoyé leur direction est revenu émerveillé et reconnaissant pour les magnifiques tenues qui ont contribué à rendre leur jour spécial encore plus mémorable."
-      const text3= "La collaboration avec Sylvain Couture pour notre dernière collection a été une expérience révolutionnaire. Leur approche innovante et leur technique impeccable ont permis de donner vie à des pièces qui ont véritablement défini la saison. Ce n'est pas seulement leur talent en couture qui impressionne, mais aussi leur engagement à respecter les délais et à travailler en harmonie avec notre vision artistique. Sylvain Couture a prouvé qu'ils étaient bien plus qu'une maison de couture ; ils sont de véritables partenaires dans la création."
+      const text= "Lorsque j'ai fait appel à Sylvain Couture pour la création de ma robe de soirée, je ne m'attendais pas à être autant subjuguée. Non seulement la robe était absolument magnifique, mais le processus de création a été une expérience exceptionnelle. L'équipe a pris le temps d'écouter mes besoins et a su traduire ma vision en réalité."
+      const text1= "Travailler avec Sylvain Couture sur plusieurs shootings photo a été un véritable plaisir. Leur capacité à fournir des pièces uniques et sur mesure qui correspondent parfaitement à l'ambiance de chaque projet est simplement remarquable. Leur attention aux détails et leur passion pour l'excellence se reflètent dans chaque création."
+      const text2= "Recommander Sylvain Couture à mes clients pour leurs tenues de mariage est devenu une évidence. La qualité de leur travail, leur professionnalisme et leur capacité à matérialiser les rêves des futurs mariés en font un choix incontournable. Chaque couple que j'ai envoyé leur direction est revenu émerveillé et reconnaissant."
+      const text3= "La collaboration avec Sylvain Couture pour notre dernière collection a été une expérience révolutionnaire. Leur approche innovante et leur technique impeccable ont permis de donner vie à des pièces qui ont véritablement défini la saison. Ce n'est pas seulement leur talent en couture qui impressionne, mais aussi leur engagement."
 
   return (
     <div className='flex flex-col p-5 md:flex gap-3 md:px-12 2xl:px-28 2xl:gap-6'>
@@ -48,13 +48,14 @@ export default CarouselComponent;
  function Clients(props){
     return(
         <div className='relative  gap-4 p-4  '>
-            <div className='flex flex-col gap-3'>
+            <div className='relative flex flex-col gap-3'>
                 <img src={props.src} alt="client" className='object-cover h-full w-full'/>
-                    <div className='absolute  top-36 md:top-44 left-16  gap-3 flex flex-col text-xl 2xl:text-2xl'>
-                        <span className='text-black'>{props.auteur}</span>
-                        <span className='underline font-bold text-[#cafc01]'>{props.poste}</span>
-                    </div>
-                <div className='px-5 text-center md:text-start 2xl:text-center'>{props.parag}</div>
+                <div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                <div className='absolute inset-0 top-36 md:top-44 left-16  gap-3 flex flex-col text-xl 2xl:text-2xl'>
+                  <span className='text-white'>{props.auteur}</span>
+                  <span className='underline font-bold text-[#cafc01]'>{props.poste}</span>
+                </div>
+                <div className='p-5 text-center md:text-start 2xl:text-center'>{props.parag}</div>
 
             </div>
         </div>
