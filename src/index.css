@@ -20,3 +20,12 @@
   .banner {
     animation: scrollBanner 10s linear infinite;
   }
+
+.slick-prev:before, .slick-next:before {
+  font-size: 32px !important; 
+  opacity: 1 !important; 
+  color: #4B5563 !important; 
+  padding: 4px !important;
+}
+
+
